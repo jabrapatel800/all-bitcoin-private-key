@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
 
   maxNumber = new BigNumber(
     'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
-    160
+    16
   );
 
   page = '1';
