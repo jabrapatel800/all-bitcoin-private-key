@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
   onOlder() {
     this.page = new BigNumber(this.page).minus(1).toString(10);
     if (this.page === '0') {
-      this.page = '1';
+      this.page = '100';
     }
     this.router.navigate(['/home'], { queryParams: { page: this.page } });
   }
