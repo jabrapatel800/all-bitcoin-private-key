@@ -26,12 +26,12 @@ export class HomeComponent implements OnInit {
 
   maxNumber = new BigNumber(
     'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF',
-    16
+    256
   );
 
   page = '1';
   // limitPerPage = 1;
-  limitPerPage = 16;
+  limitPerPage = 256;
   resultsLength = this.maxNumber.toString(10);
   maxPage = this.maxNumber.dividedBy(this.limitPerPage).toFixed(0);
 
